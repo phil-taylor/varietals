@@ -1,0 +1,24 @@
+{
+    "varietals" : [
+        { "id" :"Barbera", "name" :"Barbera", "classification" : "Red" },
+        { "id" :"Cabernet Sauvignon", "name" :"Cabernet Sauvignon", "classification" : "Red" },
+        { "id" :"Grenache", "name" :"Grenache", "classification" : "Red" },
+        { "id" :"Malbec", "name" :"Malbec", "classification" : "Red" },
+        { "id" :"Merlot", "name" :"Merlot", "classification" : "Red" },
+        { "id" :"Nebbiolo", "name" :"Nebbiolo", "classification" : "Red" },
+        { "id" :"Petite Sirah", "name" :"Petite Sirah", "classification" : "Red" },
+        { "id" :"Pinot Noir", "name" :"Pinot Noir", "classification" : "Red" },
+        { "id" :"Rhone Blends", "name" :"Rhone Blends", "classification" : "Red" },
+        { "id" :"Sangiovese", "name" :"Sangiovese", "classification" : "Red" },
+        { "id" :"Syrah / Shiraz", "name" :"Syrah / Shiraz", "classification" : "Red" },
+        { "id" :"Tempranillo", "name" :"Tempranillo", "classification" : "Red" },
+        { "id" :"Zinfandel", "name" :"Zinfandel", "classification" : "Red" },
+        { "id" :"Chardonnay", "name" :"Chardonnay", "classification" : "White" },
+        { "id" :"Gewürztraminer", "name" :"Gewürztraminer", "classification" : "White" },
+        { "id" :"Pinot Grigio / Pinot Gris", "name" :"Pinot Grigio / Pinot Gris", "classification" : "White" },
+        { "id" :"Riesling", "name" :"Riesling", "classification" : "White" },
+        { "id" :"Sauvignon Blanc", "name" :"Sauvignon Blanc", "classification" : "White" },
+        { "id" :"Verdejo", "name" :"Verdejo", "classification" : "White" },
+        { "id" :"Viognier", "name" :"Viognier", "classification" : "White" }
+    ]
+}

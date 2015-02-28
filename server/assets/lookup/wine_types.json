@@ -1,0 +1,9 @@
+{
+	"types" : [
+        { "id" :"Red", "name" :"Red", "classification": "Drinking" },
+        { "id" :"White", "name" :"White", "classification": "Drinking" },
+        { "id" :"Sparkling", "name" :"Sparkling", "classification" : "Champagne & Sparkling Wine" },
+        { "id" :"Dessert Wines", "name" :"Dessert Wines", "classification" : "Dessert Wines" }
+
+	]
+}

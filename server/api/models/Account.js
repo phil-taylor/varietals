@@ -1,0 +1,142 @@
+/**
+ * Account.js
+ *
+ * @description :: TODO: You might write a short summary of how this model works and what it represents here.
+ * @docs        :: http://sailsjs.org/#!documentation/models
+ */
+
+var passport = require("passport");
+
+module.exports = {
+
+    attributes: {
+        provider: {
+            type: 'string',
+            enum: ['local', 'twitter']
+        },
+        providerId: 'string',
+        email: {
+            type: 'string',
+            unique: true
+        },
+        gender: {
+            type: 'string',
+            enum: ['male', 'female']
+        },
+        displayName: 'string',
+        firstName: 'string',
+        middleName: 'string',
+        lastName: 'string',
+        dob: 'date',
+        location: 'string',
+        photo: 'string',
+        friends: 'array', // array of json objects [ { name: '', email: '', invitation: true, send: '2014-01-01 18:47' }
+        user: {
+            model: 'user'
+        }
+    },
+
+    authenticateOrCreate: function(profile, socialToken, done) {
+
+        async.waterfall([
+            function(callback) {
+                console.log('searching for account - ' + profile.emails[0].value);
+                Account.findOne({ where: { provider: profile.provider, email: profile.emails[0].value } }, callback);
+            },
+            function(account, callback) {
+                // create account & user if one doesn't exist
+                if (account) {
+                    console.log('- account found');
+                    callback(null, account, null);
+                } else {
+                    // attempt to find user, we allow multiple accounts per user
+                    // in case they decide to signup via local and switch to Twitter or vice-a-versa
+                    User.findOneByEmail(profile.emails[0].value, function(err, user){
+                        if (err) {
+                            callback(err);
+                        } else {
+                            callback(null, null, user);
+                        }
+                    });
+                }
+            },
+            function(account, user, callback) {
+                if (user || account) {
+                    callback(null, account, user);
+                } else {
+                    // create user
+                    console.log('creating new user...');
+                    var newUser = {
+                        name: profile.displayName,
+                        email: profile.emails[0].value,
+                        socialConnect: true,
+                        roles: 'user',
+                        password: User.createToken() // create random password
+                    };
+                    console.log(newUser);
+
+                    User.create(newUser, function(err, user){
+                        if (err) {
+                            callback(err);
+                        } else {
+                            callback(null, null, user);
+                        }
+                    });
+                }
+            },
+            function(account, user, callback) {
+                if (user && !account) {
+                    // create account
+                    console.log('creating new account...');
+                    account = {
+                        provider: profile.provider,
+                        providerId: profile.id || user.id.toString(),
+                        email: profile.emails[0].value,
+                        displayName: profile.displayName,
+                        firstName: profile.name.givenName,
+                        middleName: profile.name.middleName,
+                        lastName: profile.name.familyName,
+                        photo: profile.photos[0].value || '/images/default_profile_photo.jpg',
+                        dob: (profile._json) ? profile._json.birthday || null : null,
+                        userId: user.id
+                    };
+
+                    console.log(account);
+
+                    Account.create(account, function(err, newAccount){
+                        if (err) {
+                            callback(err);
+                        } else {
+                            callback(null, newAccount, user);
+                        }
+                    });
+
+                } else {
+                    callback(null, account, null);
+                }
+            },
+
+            function(account, user, callback) {
+                // load user if not already loaded from previous create
+                if (user) {
+                    callback(null, user);
+                } else {
+                    console.log('loading user...');
+                    account.user(callback);
+                }
+            }],
+
+            function(err, user){
+                if (err) console.error(err);
+                console.log('authentication complete');
+                console.log('- user: ')
+                console.log(user);
+
+                var token = passport.createToken(user, socialToken);
+
+                done(err, token, socialToken);
+            });
+
+    }
+};
+

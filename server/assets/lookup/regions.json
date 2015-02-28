@@ -1,0 +1,100 @@
+{
+	"data" : [
+		{
+			"group" : true,
+			"text" : "Africa",
+			"items" : [
+				{ "id" : "Algeria", "name" : "Algeria" },
+				{ "id" : "Cape Verde", "name" : "Cape Verde" },
+				{ "id" : "Morocco", "name" : "Morocco" },
+				{ "id" : "South Africa", "name" : "South Africa" },
+				{ "id" : "Tunisia", "name" : "Tunisia" }
+			]
+		},
+		{
+			"group" : true,
+			"text" : "Americas",
+			"items" : [
+				{ "id" : "Argentina", "name" : "Argentina" },
+				{ "id" : "Bolivia", "name" : "Bolivia" },
+				{ "id" : "Brazil", "name" : "Brazil" },
+				{ "id" : "Canada", "name" : "Canada" },
+				{ "id" : "Chile", "name" : "Chile" },
+				{ "id" : "Mexico", "name" : "Mexico" },
+				{ "id" : "Peru", "name" : "Peru" },
+				{ "id" : "United States", "name" : "United States", "selected" : true },
+				{ "id" : "Uruguay", "name" : "Uruguay" },
+				{ "id" : "Venezuela", "name" : "Venezuela" }
+			]
+		},
+		{
+			"group" : true,
+			"text" : "Europe",
+			"items" : [
+				{ "id" : "Albania", "name" : "Albania" },
+				{ "id" : "Austria", "name" : "Austria" },
+				{ "id" : "Armenia", "name" : "Armenia" },
+				{ "id" : "Azerbaijan", "name" : "Azerbaijan" },
+				{ "id" : "Belgium", "name" : "Belgium" },
+				{ "id" : "Bulgaria", "name" : "Bulgaria" },
+				{ "id" : "Croatia", "name" : "Croatia" },
+				{ "id" : "Cyprus", "name" : "Cyprus" },
+				{ "id" : "Czech Republic", "name" : "Czech Republic" },
+				{ "id" : "Denmark", "name" : "Denmark" },
+				{ "id" : "France", "name" : "France" },
+				{ "id" : "Georgia", "name" : "Georgia" },
+				{ "id" : "Germany", "name" : "Germany" },
+				{ "id" : "Greece", "name" : "Greece" },
+				{ "id" : "Hungary", "name" : "Hungary" },
+				{ "id" : "Ireland", "name" : "Ireland" },
+				{ "id" : "Italy", "name" : "Italy" },
+				{ "id" : "Latvia", "name" : "Latvia" },
+				{ "id" : "Luxembourg", "name" : "Luxembourg" },
+				{ "id" : "Macedonia", "name" : "Macedonia" },
+				{ "id" : "Moldova", "name" : "Moldova" },
+				{ "id" : "Montenegro", "name" : "Montenegro" },
+				{ "id" : "Netherlands", "name" : "Netherlands" },
+				{ "id" : "Poland", "name" : "Poland" },
+				{ "id" : "Portugal", "name" : "Portugal" },
+				{ "id" : "Romania", "name" : "Romania" },
+				{ "id" : "Russia", "name" : "Russia" },
+				{ "id" : "Serbia", "name" : "Serbia" },
+				{ "id" : "Slovakia", "name" : "Slovakia" },
+				{ "id" : "Slovenia", "name" : "Slovenia" },
+				{ "id" : "Sweden", "name" : "Sweden" },
+				{ "id" : "Switzerland", "name" : "Switzerland" },
+				{ "id" : "Turkey", "name" : "Turkey" },
+				{ "id" : "Ukraine", "name" : "Ukraine" },
+				{ "id" : "United Kingdom", "name" : "United Kingdom" }
+
+			]
+		},
+		{
+			"group" : true,
+			"text" : "Asia",
+			"items" : [
+				{ "id" : "China", "name" : "China" },
+				{ "id" : "India", "name" : "India" },
+				{ "id" : "Indonesia", "name" : "Indonesia" },
+				{ "id" : "Iran", "name" : "Iran" },
+				{ "id" : "Israel", "name" : "Israel" },
+				{ "id" : "Japan", "name" : "Japan" },
+				{ "id" : "Kazakhstan", "name" : "Kazakhstan" },
+				{ "id" : "Republic of Korea", "name" : "Republic of Korea" },
+				{ "id" : "Lebanon", "name" : "Lebanon" },
+				{ "id" : "Burma", "name" : "Burma" },
+				{ "id" : "Palestinian territories", "name" : "Palestinian territories" },
+				{ "id" : "Syria", "name" : "Syria" },
+				{ "id" : "Vietnam", "name" : "Vietnam" }				
+			]
+		},
+		{
+			"group" : true,
+			"text" : "Oceania",
+			"items" : [
+				{ "id" : "Australia", "name" : "Australia" },
+				{ "id" : "New Zealand", "name" : "New Zealand" }				
+			]
+		}
+	]
+}

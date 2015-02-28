@@ -1,0 +1,14 @@
+---
+applications:
+- name: varietals-server
+  memory: 512M
+  instances: 1
+  host: varietals-server
+  domain: cfapps.io
+  path: .
+  command: node server.js
+  services:
+    - varietals-db
+  env:
+    - NODE_ENV: test
+    - environment: test
