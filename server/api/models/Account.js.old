@@ -129,7 +129,7 @@ module.exports = {
             function(err, user){
                 if (err) console.error(err);
                 console.log('authentication complete');
-                console.log('- user: ')
+                console.log('- user: ');
                 console.log(user);
 
                 var token = passport.createToken(user, socialToken);
