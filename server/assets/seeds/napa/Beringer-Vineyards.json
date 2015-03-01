@@ -1,1 +1,71 @@
-{"name":"Beringer Vineyards","url":"http://www.napavintners.com/vineyards/beringer-vineyards/","logo":"http://www.napavintners.org/images/winery_labels/Beringer-105HW.jpg","region":"Napa","address":{"street":"2000 Main Street","city":"Saint Helena","stateOrProvince":"CA","postalCode":"94574","country":"USA"},"phone":" |","email":"cs_beringer@beringer.com","website":"http://www.beringer.com?utm_source=napavintners.com&utm_medium=website&utm_campaign=WineryListing","social":{"facebook":"http://www.facebook.com/BeringerVineyards","twitter":"@beringervyds","youtube":"http://www.youtube.com/user/BeringerVineyards"},"varietals":["Cabernet Franc","Cabernet Sauvignon","Chardonnay","Chenin Blanc","Merlot","Pinot Grigio / Pinot Gris","Pinot Noir","Riesling","Sangiovese","Sauvignon Blanc","Syrah","Viognier","Zinfandel"],"appelations":["Howell Mountain","Los Carneros","Mount Veeder","Oak Knoll District of Napa Valley","Oakville","Rutherford","Spring Mountain","St. Helena","Stags Leap District","Yountville"]}
+{"name": "Beringer Vineyards", "url": "http://www.napavintners.com/vineyards/beringer-vineyards/", "logo": "http://www.napavintners.org/images/winery_labels/Beringer-105HW.jpg", "region": "Napa", "address": {
+    "street": "2000 Main Street",
+    "city": "Saint Helena",
+    "stateOrProvince": "CA",
+    "postalCode": "94574",
+    "country": "USA"
+}, "phone": " |", "email": "cs_beringer@beringer.com", "website": "http://www.beringer.com?utm_source=napavintners.com&utm_medium=website&utm_campaign=WineryListing", "social": {
+    "facebook": "http://www.facebook.com/BeringerVineyards",
+    "twitter": "@beringervyds",
+    "youtube": "http://www.youtube.com/user/BeringerVineyards"
+},  "varietals": ["Cabernet Franc", "Cabernet Sauvignon", "Chardonnay", "Chenin Blanc", "Merlot", "Pinot Grigio / Pinot Gris", "Pinot Noir", "Riesling", "Sangiovese", "Sauvignon Blanc", "Syrah", "Viognier", "Zinfandel"], "appelations": ["Howell Mountain", "Los Carneros", "Mount Veeder", "Oak Knoll District of Napa Valley", "Oakville", "Rutherford", "Spring Mountain", "St. Helena", "Stags Leap District", "Yountville"],
+    "description": "Our history dates back to the year 1868, when Jacob Beringer, enticed by the opportunities of the new world, sailed from his home in Mainz, Germany, to New York. However, after hearing that the rocky hillside soil and fertile valley floor resembled that of vineyards back home in Germany, Jacob made his way to the Napa Valley. Jacob and his brother Frederick purchased 215 acres of land in 1875, and became one of the first wineries in Napa Valley. Since then, we have honed, deepened, and expanded the art of winemaking. We pursue balance between modern technology and time-tested winemaking traditions, resulting in wines of global recognition.",
+    "photos": [{ "url":"http://www.beringer.com/assets/client/image/pages/about-1.jpg", "caption":""}],
+    "wines": [
+        {
+            "name": "2009 Beringer Private Reserve Cabernet Sauvignon Napa Valley",
+            "vintage": 2009,
+            "varietal": "Cabernet Sauvignon",
+            "ava": "Napa Valley",
+            "type": "Red",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/2007-2010-Beringer-Private-Reserve-Cabernet-Sauvignon-Napa-Valley.png", "caption": ""}],
+            "description": "The 2009 Private Reserve Cabernet Sauvignon presents aromas of ripe blackberry, sweet pastry and espresso, accented by hints of lavender, cedar and graphite. The palate is concentrated and dense with flavors of dark fruit and spice notes. A rich texture and mouth-coating tannins linger in the elegant finish. With each vintage of the acclaimed Private Reserve Cabernet Sauvignon, Beringer Winemaker Laurie Hook chooses the best lots from our reserve vineyards in the Napa Valley, each of which demonstrate remarkable expression of terroir. Beringer's extraordinary collection of vineyards is the result of a significant and decades-long relationship between viticulture and winemaking. This partnership began with Ed Sbragia and Bob Steinhauer in the 1970's, and continues today with Winemaker Laurie Hook and viticulturalist Drew Johnson, who has cared for our vineyards for over 20 years. Just as critical as the relationship between viticulture and winemaking is the collaboration between Winemaker Laurie Hook and Ed Sbragia that has shaped the Reserve portfolio. Winemaker Laurie Hook builds on the acclaimed consistency and quality of this wine with the 2009 vintage, which marks her 27th harvest with Beringer."
+        },
+        {
+            "name": "2012 Beringer Cabernet Sauvignon Knights Valley",
+            "vintage": 2012,
+            "varietal": "Cabernet Sauvignon",
+            "ava": "Knights Valley",
+            "type": "Red",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/BER_12KVCabSauv.png", "caption": ""}],
+            "description": "The 2012 Knights Valley Cabernet Sauvignon has aromas of dark blue fruits and spices. Notes of cassis, sweet licorice and a juicy core of fruit are balanced by nice acidity and a silky, lingering finish. To maintain the unique characteristics of the different lots from varying areas of the vineyard, Chief Winemaker Laurie Hook monitored each of the lots through vinification and aging. The wines were then aged in a combination of seasoned oak barrels with a small amount of new oak for 17 months to both round and soften the tannins and bring in some additional spice notes. The foundation of the Waymaker is Syrah, a varietal that demonstrates great richness and generosity from Camatta Hills. Cabernet Sauvignon comprises the majority of the balance of the blend, and lends great depth of fruit as well as lifted spice notes. Laurie blended in a portion of Petite Sirah for its aromatics and rich, inky color."
+        },
+        {
+            "name": "2011 Beringer Modern Heritage Chardonnay Napa Valley",
+            "vintage": 2011,
+            "varietal": "Chardonnay",
+            "ava": "Napa Valley",
+            "type": "White",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/_BER_ModHeritageChard.png", "caption": ""}],
+            "description": "Vivid and expressive, this Carneros-sourced Chardonnay leaps from the glass with notes of Granny apple, Asian pear and lemon zest. In the mouth the bright acidity brings focus to the rich palate of butterscotch, pineapple and graham cracker crust. There’s a warm oak spiciness to this Chardonnay, and a fresh, tropical fruit character that persists through the long, zesty finish."
+        },
+        {
+            "name": "2012 Beringer Chardonnay Modern Heritage Napa Valley",
+            "vintage": 2012,
+            "varietal": "Chardonnay",
+            "ava": "Napa Valley",
+            "type": "White",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/2010_BER_Chard_MH.png", "caption": ""}],
+            "description": "Vivid and expressive, this Carneros-sourced Chardonnay leaps from the glass with notes of Granny apple, Asian pear and lemon zest. In the mouth the bright acidity brings focus to the rich palate of butterscotch, pineapple and graham cracker crust. There’s a warm oak spiciness to this Chardonnay, and a fresh, tropical fruit character that persists through the long, zesty finish."
+        },
+        {
+            "name": "2012 Beringer Private Reserve Chardonnay Napa Valley",
+            "vintage": 2012,
+            "varietal": "Chardonnay",
+            "ava": "Napa Valley",
+            "type": "White",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/2012-Beringer-Private-Reserve-Chardonnay-Napa-Valley.png", "caption": ""}],
+            "description": "Aromas of grilled stone fruits and toasted hazelnuts are complemented by flavors of ripe tropical fruit and notes of lemon and lime. A generous, creamy mouthfeel is rounded out by balanced acidity and a lengthy, elegant finish. For this vintage, each Chardonnay lot was kept separate throughout the aging process. After sending the fruit directly to press, winemaker Laurie Hook fermented the juice in French oak barrels (88 percent new) to enhance the natural richness in the wine. All of the wine was put through malolactic fermentation to encourage a lush creaminess. After 9 months aging, Laurie chose the most expressive lots and blended them to create a richly layered wine with aromas of crème brulee and rich citrus and fruit flavors. "
+        },
+        {
+            "name": "2013 Beringer Sauvignon Blanc Napa Valley",
+            "vintage": 2013,
+            "varietal": "Sauvignon Blanc",
+            "ava": "Napa Valley",
+            "type": "White",
+            "photos": [{"url": "http://www.beringer.com/assets/thirdparty/wines//originals/2013-Beringer-Sauvignon-Blanc-Napa-Valley2.png", "caption": ""}],
+            "description": "The 2013 Napa Valley Sauvignon Blanc is an enticing wine with aromas of bright citrus zest, gooseberry and notes of white flowers. Flavors of lemon and tangerine zest are complemented by a bright acidity and round mouthfeel."
+        }
+
+    ]
+}

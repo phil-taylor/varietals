@@ -1,9 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<h1>Varietals <small>your trip results</small></h1>
+<div class="row">
+    <div class="small-4 large-8 columns">
+        <script>
+            var map;
 
-</body>
-</html>
+            require(["esri/map", "dojo/domReady!"], function(Map) {
+                map = new Map("map", {
+                    basemap: "streets",
+                    center: [-122.45, 37.75], // longitude, latitude
+                    zoom: 13
+                });
+            });
+        </script>
+        <div id="map"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="small-4 large-8 columns">
+        <div class="winery">
+            <h3>Winery #1</h3>
+            <div class="content">IMAGE & DESC</div>
+            <div class="footer">RATING HERE</div>
+        </div>
+    </div>
+</div>

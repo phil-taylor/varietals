@@ -19,6 +19,7 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.connections.html
  */
 var url = require('url');
+/*
 var cloudFoundryMongo = function cloudFoundryMongo(){
     if (process.env.VCAP_SERVICES) {
         var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
@@ -45,6 +46,7 @@ var cloudFoundryMongo = function cloudFoundryMongo(){
             db: null };
     }
 };
+*/
 
 module.exports.connections = {
 
@@ -85,6 +87,7 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
+  /*
   Mongodb: {
     adapter: 'sails-mongo',
     host: cloudFoundryMongo().hostname,
@@ -93,6 +96,15 @@ module.exports.connections = {
     password: cloudFoundryMongo().password,
     database: cloudFoundryMongo().db
   },
+  */
+    Mongodb: {
+        adapter: 'sails-mongo',
+        host: 'proximus.modulusmongo.net',
+        port: 27017,
+        user: 'varietals',
+        password: 'Welcome2',
+        database: 'dorAdy8r'
+    },
 
   /***************************************************************************
   *                                                                          *

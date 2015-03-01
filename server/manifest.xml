@@ -1,9 +1,9 @@
 ---
 applications:
-- name: varietals-server
+- name: api-varietals
   memory: 512M
   instances: 1
-  host: varietals-server
+  host: api-varietals
   domain: cfapps.io
   path: .
   command: node server.js

@@ -1,3 +1,9 @@
-/**
- * Created by phil on 2/28/15.
- */
+module.exports = {
+
+    merge: function merge(a,b) {
+        for(var property in b){
+            a[property] = b[property];
+        }
+        return a;
+    }
+}

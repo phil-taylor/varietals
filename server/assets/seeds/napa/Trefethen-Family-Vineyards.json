@@ -7,8 +7,56 @@
 }, "phone": " |", "email": "winery@trefethen.com", "website": "http://www.trefethen.com?utm_source=napavintners.com&utm_medium=website&utm_campaign=WineryListing", "social": {
     "facebook": "http://www.facebook.com/pages/Trefethen-Family-Vineyards/89179164089",
     "twitter": "http://twitter.com/trefethenfamily"
-}, "varietals": ["Cabernet Franc", "Cabernet Sauvignon", "Chardonnay", "Late Harvest / Dessert", "Malbec", "Merlot", "Pinot Noir", "Red Blend", "Riesling", "Rose", "Viognier"], "appelations": ["Oak Knoll District of Napa Valley"],
-   "wines": [
+},  "varietals": ["Cabernet Franc", "Cabernet Sauvignon", "Chardonnay", "Late Harvest / Dessert", "Malbec", "Merlot", "Pinot Noir", "Red Blend", "Riesling", "Rose", "Viognier"], "appelations": ["Oak Knoll District of Napa Valley"],
+    "description": "Trefethen Family Vineyards produces a diverse range of award-winning varietal, blended and reserve wines – all from our Napa Valley estate – exhibiting the classic hallmarks of fine wine quality: richness with elegance, concentration with finesse, complexity with harmony, and sophistication with approachability. Reflecting both the relatively cool climate of our Oak Knoll District of Napa Valley estate vineyard and the Trefethen family’s preference for balanced wines, this classic style dovetails perfectly with the growing movement of connoisseurs in the United States away from wines of unbridled alcohol and ripeness toward wines of greater finesse and food-friendliness.",
+    "photos": [{ "url":"http://www.trefethen.com/assets/client/Image/wines-in-box[1].jpg", "caption":""}],
+    "wines": [
+        {
+            "name": "2010 Dry Riesling",
+            "vintage": 2010,
+            "varietal": "Riesling",
+            "ava": "Napa Valley",
+            "type": "White",
+            "photos": [{"url": "http://biggerthanyourhead.net/wp-content/uploads/2010/11/trefethen-dry-riesling.jpg", "caption": ""}],
+            "description": "THE VINTAGE The vines got off to a slow start as April and May were both cooler and wetter than average. The cool trend continued into the mild summer and a full growing season that was our coolest since 1978. The exception was one notable heat spell in late August, when temperatures soared to over 111° F! Fortunately, September and October brought enough warm days to provide a beautiful finish to the growing season, allowing us to complete harvest a full week earlier than in 2009.  THE WINE Fresh and fragrant the distinct floral aromas of jasmine and geranium are integrated with ripe white peach. On the palate delightful acidity and minerality prevail with classic Trefethen Riesling flavors of lime, peach and a touch of refreshing kiwi and melon. A lingering essence of grapefruit gives this wine a lively finish.  FOOD AFFINITIES Shellfish, sushi, crab cakes, seared Ahi tuna, lemon chicken, grilled chicken-apple sausages and a broad assortment of Asian, southwestern and Caribbean dishes (especially green curries) are just a few of the delicious matches for this wonderfully versatile food wine. Don’t forget to sip some while you cook!"
+        },
+       {
+           "name": "2013 Dry Riesling",
+           "vintage": 2013,
+           "varietal": "Riesling",
+           "ava": "Napa Valley",
+           "type": "White",
+           "photos": [{"url": "http://www.trefethen.com/assets/images/products/large/bottle-Dry-Riesling.png", "caption": ""}],
+           "description": "THE VINTAGE The spring was warm and dry, getting the vines off to an early start. The weather stayed warm throughout the summer but was free of damaging heat spells. September brought a classic Napa Valley autumn with warm days and very cool nights. With the consistent warmth, the harvest began about two weeks early and we had a very busy September. The beautiful growing season resulted in truly exceptional wines—full of ripe flavors, developed in the sunshine, and balanced by natural acidity from the cool nights.  THE WINE Aromas of jasmine, orange blossom and lime lead to rich tropical and floral notes on the palate. The wine has delightful acidity and minerality and ends with flavors of ruby red grapefruit and peaches. FOOD AFFINITIES Shellfish, sushi, crab cakes, seared Ahi tuna, lemon chicken, grilled chicken-apple sausages and a broad assortment of Asian, southwestern and Caribbean dishes (especially green curries) are just a few of the delicious matches for this wonderfully versatile food wine. Don’t forget to sip some while you cook!"
+       },
+       {
+           "name": "2013 Chardonnay",
+           "vintage": 2013,
+           "varietal": "Chardonnay",
+           "ava": "Napa Valley",
+           "type": "White",
+           "photos": [{"url": "http://www.trefethen.com/assets/images/products/large/bottle-Chardonnay1.png", "caption": ""}],
+           "description": "In 1979, Trefethen 1976 Chardonnay was named “Best Chardonnay in the World at the Gault Millau World Wine Olympics in France, beginning our 30-year tradition of excellence with this most popular of white wines. Key to our success is our vineyard’s location in the Oak Knoll District of Napa Valley, where well-drained, loamy soils and a marine-influenced climate yield Chardonnay grapes with rich, balanced flavors."
+       },
+       {
+           "name": "2011 Merlot",
+           "vintage": 2011,
+           "varietal": "Merlot",
+           "ava": "Napa Valley",
+           "type": "Red",
+           "photos": [{"url": "http://www.trefethen.com/assets/images/products/large/bottle-Merlot.png", "caption": ""}],
+           "description": "Because Merlot flourishes in relatively cool growing regions with moist soils, it’s extremely well-suited to the ancient alluvial loams, temperate climate, and long growing season of our estate vineyard in the Oak Knoll District of Napa Valley, a sweet spot between Napa’s warmer up-valley regions and its cool southern tip."
+       },
+       {
+           "name": "2011 Cabernet Sauvignon",
+           "vintage": 2011,
+           "varietal": "Cabernet Sauvignon",
+           "ava": "",
+           "type": "Red",
+           "photos": [{"url": "http://www.trefethen.com/assets/images/products/large/bottle-Cabernet-Sauvignon1.png", "caption": ""}],
+           "description": "Our Cabernet Sauvignon vines are planted in gravelly soils in the northwestern quadrant of our estate vineyard in the Oak Knoll District of Napa Valley. These well drained soils combined with limited yields produce Cabernet Sauvignon fruit with bright and complex flavors."
+       }
+
 
    ]
 }

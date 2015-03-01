@@ -13,7 +13,7 @@ module.exports = {
 
         var preferences = req.body; // { types: [], varietals: [] }
         // where: { types: preferences.types, varietals: preferences.varietals }
-        Winery.find({ where: { types: preferences.types, varietals: preferences.varietals }}, function(err, wineries){
+        Winery.find({ where: { types: preferences.types, varietals: preferences.varietals }, sort: 'rating DESC'}, function(err, wineries){
             console.log('suggestions');
 
             console.log(wineries);
@@ -25,6 +25,26 @@ module.exports = {
                 res.json(wineries);
             }
         })
+    },
+
+    createPreferences: function(req,res){
+
+        console.log(req.params);
+
+        User.findById(req.params.id, function(err, user){
+            if (err) {
+                console.error('ERROR: failed to load user');
+                console.error(err);
+                res.send(500, err);
+
+            } else {
+
+                PreferenceService.analyze(user);
+                res.send(200, req.user);
+
+            }
+        });
+
     }
 
 };

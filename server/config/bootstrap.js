@@ -15,6 +15,8 @@ var path = require('path');
 
 module.exports.bootstrap = function(done) {
 
+    sails.services.passport.loadStrategies();
+
     Winery.count({}, function(err, count){
 
         if (err) {
@@ -104,19 +106,6 @@ module.exports.bootstrap = function(done) {
             return source;
         };
 
-        /*
-                new JsonMap()
-
-            .field('*', 'likes', function(source){
-                return Math.floor(Math.random() * (max - min)) + min;
-            })
-
-            .field('*', 'dislikes', function(source){
-                return Math.floor(Math.random() * (max - min)) + min;
-            })
-        */
-
-
         var folder = './assets/seeds/napa/';
 
         fs.readdir(folder, function(err, files){
@@ -132,10 +121,10 @@ module.exports.bootstrap = function(done) {
 
                     var dest = addType(source);
 
-                    // dest.rating = Math.floor((dest.likes / (dest.likes + dest.dislikes)) * 100);
-                    dest.likes = 0;
-                    dest.dislikes = 0;
                     dest.rating = 0;
+
+                    var wines = dest.wines || [];
+                    delete dest.wines;
 
                     Winery.create(dest, function(err,winery){
 
@@ -144,7 +133,34 @@ module.exports.bootstrap = function(done) {
                             processed(err);
                         } else {
                             console.log('----> SUCCESS: winery created');
-                            processed();
+
+
+                            if (wines) {
+                                async.each(wines, function(wine, done){
+
+                                    wine.winery = winery.id;
+
+                                    Wine.create(wine, function(err,saved){
+
+                                        if (err) {
+                                            done(err);
+                                        } else {
+                                            done();
+                                        }
+                                    });
+
+                                }, function(err){
+                                    if (err) {
+                                        console.error('ERROR: Unable to add wines.');
+                                        console.error(err);
+                                        processed(err);
+                                    } else {
+                                        processed();
+                                    }
+                                });
+                            } else {
+                                processed();
+                            }
                         }
 
                     });

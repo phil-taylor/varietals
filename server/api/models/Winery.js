@@ -14,11 +14,9 @@ module.exports = {
         },
         website: 'string',
         logo: 'string',
-        social: 'json', // { facebook: '', twitter: '' }
+        social: 'json', // { facebook: '', twitter: {id: '', screen_name: '', url: '', followers_count: 0, friends_count: 0, listed_count: 0} }
         photos: 'array', // array of json objects { caption: '', url: '' }
-        rating: 'integer',
-        likes: 'integer',
-        dislikes: 'integer',
+        rating: 'float',
         description: 'text',
         types: 'array',
         varietals: 'array',
@@ -31,6 +29,10 @@ module.exports = {
         status: 'string',
         hours: 'string',
         location: 'json',
+        wines: {
+            collection: 'wine',
+            via: 'winery'
+        },
         owners: 'array' // array of user identifiers
     }
 };
