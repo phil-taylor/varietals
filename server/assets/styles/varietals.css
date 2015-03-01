@@ -43,6 +43,10 @@ a img {
     border: none;
 }
 
+h1 {
+    color:#b7a930;
+    margin-bottom: 30px;
+}
 
 h2 {
     font-size: 16px;

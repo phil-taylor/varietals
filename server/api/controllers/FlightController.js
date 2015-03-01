@@ -19,11 +19,24 @@ module.exports = {
 
     },
 
-    flights: function flights(req,res){
-        res.view('flights', {
-            partials: {
-                links: 'partials/links'
+    lookup: function lookup(req,res){
+
+
+        SabreService.getFlights(req.query.origin, req.query.destination, req.query.lengthofstay, function(err, flights){
+
+            if (err) {
+                console.error('ERROR: unable to fetch flights from Sabre');
+                console.error(err);
+                res.send(500, err);
+            } else {
+                res.view('flights', {
+                    flights: flights.FareInfo.slice(10),
+                    partials: {
+                        links: 'partials/links'
+                    }
+                });
             }
         });
+
     }
 }
