@@ -30,7 +30,7 @@ module.exports = {
                 res.send(500, err);
             } else {
                 res.view('flights', {
-                    flights: flights.FareInfo.slice(10),
+                    flights: flights.FareInfo.slice(0, 9),
                     partials: {
                         links: 'partials/links'
                     }
